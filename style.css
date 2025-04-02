@@ -208,6 +208,44 @@ span {
     display: none; /* Initially hidden by javascript */
     
 }
+
+
+.skills-section {
+    padding: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Explicitly set 3 columns */
+    gap: 20px;
+    /* Adjust the gap between grid items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item img {
+    width: 80px;
+    /* Set a fixed width for equal image sizes */
+    height: 80px;
+    /* Set a fixed height for equal image sizes */
+    object-fit: contain;
+    /* Ensure the entire image fits within the dimensions */
+    margin-bottom: 5px;
+    line-height: 80px;
+    /* Make line-height equal to image height for consistent vertical spacing */
+}
+
+.skill-item p {
+    line-height: 1.2;
+   
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
